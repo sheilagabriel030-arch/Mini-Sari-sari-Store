@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Sari-Sari Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c5aa0;
+            --secondary: #d4af37;
+            --light: #f8f9fa;
+            --dark: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+        }
+        
+        .navbar-brand {
+            font-weight: bold;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary) 0%, #4a7bc8 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .feature-card {
+            text-align: center;
+            padding: 2rem 1rem;
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border: none;
+            padding: 0.8rem 2rem;
+            font-weight: 600;
+        }
+        
+        .btn-primary:hover {
+            background-color: #234785;
+            transform: translateY(-2px);
+        }
+        
+        .menu-section {
+            background-color: var(--light);
+        }
+        
+        .menu-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            height: 100%;
+            text-align: center;
+        }
+        
+        .menu-icon {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 3rem 0 2rem;
+        }
+        
+        .cta-section {
+            background: linear-gradient(135deg, var(--secondary) 0%, #e6c158 100%);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary);">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-store me-2"></i>Mini Sari-Sari Store
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="/">Home</a>
+                <a class="nav-link" href="/products">Products</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Welcome to Mini Sari-Sari Store</h1>
+            <p class="hero-subtitle">Your one-stop shop for daily needs at affordable prices</p>
+            <!-- REMOVED: Explore Our Products button from hero section -->
+        </div>
+    </section>
+
+    <!-- Our Menu -->
+    <section class="section menu-section">
+        <div class="container">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="menu-card">
+                        <div class="menu-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h3>Best Prices Guaranteed</h3>
+                        <p>Enjoy competitive pricing on snacks, drinks, and household essentials. Great value for your money.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="menu-card">
+                        <div class="menu-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Quality You Can Trust</h3>
+                        <p>Fresh products and trusted brands. Your satisfaction is our priority.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- REMOVED: View All Products button from menu section -->
+        </div>
+    </section>
+
+    <!-- Single Call-to-Action Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Ready to Shop?</h2>
+            <p class="mb-4">Browse our complete selection of products</p>
+            <a href="/products" class="btn btn-light btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-8 text-center text-md-start">
+                    <h5><i class="fas fa-store me-2"></i>Mini Sari-Sari Store</h5>
+                    <p class="mb-0">Your trusted neighborhood store for all daily essentials.</p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Mini Sari-Sari Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
