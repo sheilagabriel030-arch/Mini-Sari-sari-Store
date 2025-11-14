@@ -567,5 +567,5 @@ app.get('/api/orders/:orderNumber', (req, res) => {
 // =============================================
 app.listen(PORT, () => {
     console.log(`🛒 Sari-Sari Store server running on http://localhost:${PORT}`);
-    console.log(`📦 Loaded ${sampleProducts.length} sample products`);
+   // console.log(`Loaded ${sampleProducts.length} sample products`);
 });

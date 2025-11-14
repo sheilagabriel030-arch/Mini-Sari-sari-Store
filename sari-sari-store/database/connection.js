@@ -19,8 +19,8 @@ connection.connect((err) => {
         console.log('3. Is the port correct (3307)?');
         return;
     }
-    console.log('✅ Connected to MariaDB database successfully!');
-    console.log('📊 Database: sari_sari_store');
+    console.log('Connected to MariaDB database successfully!');
+    console.log('Database: sari_sari_store');
 });
 
 connection.on('error', (err) => {
